@@ -5,7 +5,7 @@ import { ShieldCheck } from "lucide-react";
 export function GuaranteeSection() {
   return (
     <section
-      className="border-t border-white/[0.06] py-14 sm:py-[4.25rem] md:py-16 lg:py-20"
+      className="border-t border-white/[0.06] py-12 sm:py-[4.25rem] md:py-16 lg:py-20"
       aria-labelledby="guarantee-heading"
     >
       <Container>
@@ -23,7 +23,7 @@ export function GuaranteeSection() {
           >
             {GUARANTEE.title}
           </h2>
-          <p className="mt-5 text-base leading-[1.65] text-ink-muted sm:mt-6">
+          <p className="mt-4 text-base leading-[1.65] text-ink-muted sm:mt-6">
             {GUARANTEE.body}
           </p>
         </div>

@@ -6,7 +6,6 @@ import { ProductSolutionSection } from "@/components/landing/ProductSolutionSect
 import { AudienceSection } from "@/components/landing/AudienceSection";
 import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
 import { OfferSection } from "@/components/landing/OfferSection";
-import { UpsellSection } from "@/components/landing/UpsellSection";
 import { GuaranteeSection } from "@/components/landing/GuaranteeSection";
 import { FAQSection } from "@/components/landing/FAQSection";
 import { FinalCTASection } from "@/components/landing/FinalCTASection";
@@ -25,7 +24,6 @@ export default function Home() {
         <AudienceSection />
         <TestimonialsSection />
         <OfferSection />
-        <UpsellSection />
         <GuaranteeSection />
         <FAQSection />
         <FinalCTASection />

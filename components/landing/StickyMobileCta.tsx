@@ -20,7 +20,7 @@ export function StickyMobileCta() {
           <CTAButton
             href={CHECKOUT_URL}
             variant="primary"
-            className="w-full shadow-[0_-4px_24px_-8px_rgba(0,0,0,0.45)]"
+            className="w-full text-[1.0625rem] shadow-[0_-4px_24px_-8px_rgba(0,0,0,0.45)] sm:text-base"
           >
             {STICKY_MOBILE_CTA_LABEL}
           </CTAButton>

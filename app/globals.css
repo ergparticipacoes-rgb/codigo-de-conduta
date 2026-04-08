@@ -42,6 +42,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Mobile: leve ganho de legibilidade (desktop inalterado a partir de sm) */
+@media (max-width: 639px) {
+  html {
+    font-size: 106.25%;
+  }
+
+  body {
+    line-height: 1.64;
+  }
+}
+
 @media (min-width: 640px) {
   body {
     font-size: 1.0625rem;

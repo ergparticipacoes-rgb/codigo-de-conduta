@@ -6,7 +6,7 @@ export function FinalCTASection() {
   return (
     <section
       id="fechar"
-      className="scroll-mt-20 border-t border-accent/25 bg-gradient-to-b from-panel/85 via-panel/45 to-canvas py-14 sm:py-[4.25rem] md:py-20 lg:py-24"
+      className="scroll-mt-28 border-t border-accent/25 bg-gradient-to-b from-panel/85 via-panel/45 to-canvas py-12 sm:scroll-mt-24 sm:py-[4.25rem] md:py-20 lg:py-24"
       aria-labelledby="final-cta-heading"
     >
       <Container>
@@ -17,10 +17,10 @@ export function FinalCTASection() {
           >
             {FINAL_CTA.title}
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-[1.65] text-ink-muted sm:mt-7 sm:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.65] text-ink-muted sm:mt-7 sm:text-lg">
             {FINAL_CTA.subtitle}
           </p>
-          <div className="mt-10 flex flex-col items-center sm:mt-12">
+          <div className="mt-9 flex flex-col items-center sm:mt-12">
             <CTAButton
               href={FINAL_CTA.ctaHref}
               variant="primary"

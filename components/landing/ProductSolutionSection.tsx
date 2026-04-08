@@ -10,7 +10,7 @@ const icons = [BookMarked, Compass, ListChecks, FileCheck];
 export function ProductSolutionSection() {
   return (
     <section
-      className="py-14 sm:py-[4.25rem] md:py-20 lg:py-24"
+      className="py-12 sm:py-[4.25rem] md:py-20 lg:py-24"
       aria-labelledby="solution-heading"
     >
       <Container>
@@ -25,16 +25,16 @@ export function ProductSolutionSection() {
             {PRODUCT_SOLUTION.authorityNote}
           </p>
         ) : null}
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 md:mx-auto md:max-w-5xl md:gap-6 lg:mt-12 lg:max-w-none lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5 md:mx-auto md:max-w-5xl md:gap-6 lg:mt-12 lg:max-w-none lg:grid-cols-4">
           {PRODUCT_SOLUTION.benefits.map((b, i) => {
             const Icon = icons[i] ?? BookMarked;
             return (
               <SurfaceCard key={b.title} className="flex flex-col">
                 <Icon className="h-6 w-6 text-accent" strokeWidth={1.6} aria-hidden />
-                <h3 className="mt-6 font-display text-xl font-semibold leading-snug tracking-tight text-ink sm:text-2xl">
+                <h3 className="mt-5 font-display text-xl font-semibold leading-snug tracking-tight text-ink sm:mt-6 sm:text-2xl">
                   {b.title}
                 </h3>
-                <p className="mt-4 flex-1 text-base leading-[1.65] text-ink-muted">
+                <p className="mt-3 flex-1 text-base leading-[1.65] text-ink-muted sm:mt-4">
                   {b.description}
                 </p>
               </SurfaceCard>

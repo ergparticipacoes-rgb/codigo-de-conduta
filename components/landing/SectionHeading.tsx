@@ -22,20 +22,20 @@ export function SectionHeading({
   const alignClass = align === "center" ? "text-center mx-auto" : "";
   const subMargin =
     microLine != null && microLine !== ""
-      ? "mt-5 max-w-2xl sm:mt-6"
-      : "mt-6 max-w-2xl sm:mt-7";
+      ? "mt-4 max-w-2xl sm:mt-6"
+      : "mt-5 max-w-2xl sm:mt-7";
 
   return (
     <div className={`max-w-3xl ${alignClass} ${className}`}>
       <h2
         id={id}
-        className="font-display text-[1.6875rem] font-semibold leading-[1.18] tracking-[-0.02em] text-ink text-balance sm:text-[1.875rem] sm:leading-[1.17] md:text-[2.125rem] md:leading-[1.15] lg:text-[2.25rem] lg:leading-[1.14] xl:text-[2.375rem] xl:leading-[1.13]"
+        className="font-display text-[1.75rem] font-semibold leading-[1.18] tracking-[-0.02em] text-ink text-balance sm:text-[1.875rem] sm:leading-[1.17] md:text-[2.125rem] md:leading-[1.15] lg:text-[2.25rem] lg:leading-[1.14] xl:text-[2.375rem] xl:leading-[1.13]"
       >
         {title}
       </h2>
       {microLine ? (
         <p
-          className={`mt-3 max-w-2xl text-base font-medium leading-snug tracking-wide text-ink-muted sm:mt-4 ${align === "center" ? "mx-auto" : ""}`}
+          className={`mt-2.5 max-w-2xl text-base font-medium leading-snug tracking-wide text-ink-muted sm:mt-4 ${align === "center" ? "mx-auto" : ""}`}
         >
           {microLine}
         </p>

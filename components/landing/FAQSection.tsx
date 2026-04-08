@@ -12,7 +12,7 @@ export function FAQSection() {
   return (
     <section
       id="faq"
-      className="scroll-mt-20 border-t border-white/[0.06] bg-elevated/40 py-14 sm:py-[4.25rem] md:py-20 lg:py-24"
+      className="scroll-mt-28 border-t border-white/[0.06] bg-elevated/40 py-12 sm:scroll-mt-24 sm:py-[4.25rem] md:py-20 lg:py-24"
       aria-labelledby="faq-heading"
     >
       <Container>
@@ -20,7 +20,7 @@ export function FAQSection() {
         <h2 id="faq-heading" className="sr-only">
           Perguntas frequentes
         </h2>
-        <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-2xl border border-white/[0.07] bg-panel/45 shadow-[0_2px_28px_-14px_rgba(0,0,0,0.5)] sm:mt-10">
+        <div className="mx-auto mt-7 max-w-3xl overflow-hidden rounded-2xl border border-white/[0.07] bg-panel/45 shadow-[0_2px_28px_-14px_rgba(0,0,0,0.5)] sm:mt-10">
           {FAQ_ITEMS.map((item, index) => {
             const isOpen = open === index;
             return (
