@@ -7,21 +7,20 @@ export function NavbarSimple() {
     <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-canvas/75 backdrop-blur-xl backdrop-saturate-150">
       <Container
         as="div"
-        className="flex flex-col gap-3 py-3.5 sm:h-[4.25rem] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:py-0"
+        className="flex items-center justify-center py-3.5 sm:h-[4.25rem] sm:justify-between sm:gap-4 sm:py-0"
       >
         <a
           href="#top"
-          className="min-w-0 font-display text-[1.0625rem] font-semibold leading-snug tracking-tight text-ink transition-colors duration-200 hover:text-accent sm:text-xl lg:text-2xl"
+          className="w-full min-w-0 px-1 text-center font-display text-[1.125rem] font-semibold leading-[1.2] tracking-tight text-ink text-balance transition-colors duration-200 hover:text-accent sm:w-auto sm:max-w-none sm:px-0 sm:text-left sm:text-xl sm:leading-snug lg:text-2xl"
         >
-          <span className="block text-balance sm:inline">{PRODUCT_NAME}</span>
+          {PRODUCT_NAME}
         </a>
         <CTAButton
           href={NAV.ctaHref}
           variant="secondary"
-          className="w-full shrink-0 px-3 py-2.5 text-base min-h-[44px] sm:w-auto sm:min-h-[48px] sm:px-5 sm:py-2.5"
+          className="max-sm:!hidden sm:!inline-flex shrink-0 px-5 py-2.5 text-base min-h-[48px] sm:min-h-[48px]"
         >
-          <span className="sm:hidden">{NAV.ctaLabelShort}</span>
-          <span className="hidden sm:inline">{NAV.ctaLabel}</span>
+          {NAV.ctaLabel}
         </CTAButton>
       </Container>
     </header>

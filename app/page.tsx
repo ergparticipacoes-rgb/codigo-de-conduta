@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <NavbarSimple />
-      <main className="pb-[5.75rem] md:pb-0">
+      <main className="pb-[7rem] md:pb-0">
         <HeroSection />
         <PainPointsSection />
         <BreakBeliefSection />

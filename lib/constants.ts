@@ -6,9 +6,6 @@ export const PRODUCT_NAME = "Código de Conduta Masculina";
 export const CHECKOUT_URL =
   process.env.NEXT_PUBLIC_CHECKOUT_URL?.trim() || "https://SEU-LINK-AQUI";
 
-/** CTA fixo mobile — decisão + ação */
-export const STICKY_MOBILE_CTA_LABEL = "Corrigir o padrão — acesso imediato";
-
 /** Metadados SEO — reutilizados no layout */
 export const SITE_META = {
   titleSuffix: "Comportamento, controle, posicionamento",
@@ -18,8 +15,6 @@ export const SITE_META = {
 
 export const NAV = {
   ctaLabel: "Obter o Código agora",
-  /** Navbar mobile — curto para não competir com a marca */
-  ctaLabelShort: "Obter agora",
   ctaHref: CHECKOUT_URL,
 } as const;
 
