@@ -84,13 +84,13 @@ export function OfferSection() {
                       <span className="opacity-90">por:</span>
                     </p>
                     <p
-                      className="mt-2 font-display text-[3.125rem] font-bold tabular-nums leading-[0.92] tracking-[-0.04em] text-ink [text-shadow:0_2px_24px_rgba(0,0,0,0.35)] sm:mt-2.5 sm:text-[3.875rem] md:text-[4.125rem] lg:text-[4.5rem]"
+                      className="mt-2 font-display text-[3.25rem] font-extrabold tabular-nums leading-[0.92] tracking-[-0.04em] text-ink [text-shadow:0_2px_28px_rgba(0,0,0,0.4)] sm:mt-2.5 sm:text-[4rem] md:text-[4.25rem] lg:text-[4.75rem]"
                       aria-label={`Preço atual ${OFFER.priceCurrent}`}
                     >
                       {OFFER.priceCurrent}
                     </p>
                     <div className="mt-6 border-t border-white/[0.08] pt-5 sm:mt-7 sm:pt-6">
-                      <p className="max-w-xl text-balance text-base font-medium leading-[1.58] text-ink/92 sm:text-lg sm:leading-[1.55]">
+                      <p className="max-w-xl whitespace-pre-line text-balance text-base font-medium leading-[1.58] text-ink/92 sm:text-lg sm:leading-[1.55]">
                         {OFFER.priceNote}
                       </p>
                     </div>

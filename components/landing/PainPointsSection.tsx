@@ -16,7 +16,7 @@ export function PainPointsSection() {
         <SectionHeading
           id="pain-heading"
           title={PAIN_POINTS.title}
-          subtitle={PAIN_POINTS.subtitle}
+          subtitle={PAIN_POINTS.subtitle || undefined}
         />
         <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 md:mx-auto md:max-w-5xl lg:mt-14 lg:max-w-none">
           {PAIN_POINTS.items.map((item) => (
@@ -24,7 +24,7 @@ export function PainPointsSection() {
               <h3 className="font-display text-xl font-semibold leading-snug tracking-tight text-ink sm:text-2xl">
                 {item.title}
               </h3>
-              <p className="mt-4 text-base leading-[1.62] text-ink-muted sm:mt-5">
+              <p className="mt-4 whitespace-pre-line text-base leading-[1.62] text-ink-muted sm:mt-5">
                 {item.description}
               </p>
             </SurfaceCard>

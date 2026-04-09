@@ -13,7 +13,7 @@ export function StickyMobileCta() {
       <div
         className="pointer-events-auto border-t border-white/[0.08] bg-canvas/94 px-4 pt-3.5 backdrop-blur-lg backdrop-saturate-150 sm:px-5 sm:pt-4"
         style={{
-          paddingBottom: "max(1rem, env(safe-area-inset-bottom))",
+          paddingBottom: "max(0.875rem, env(safe-area-inset-bottom))",
         }}
       >
         <div className="mx-auto w-full max-w-6xl">

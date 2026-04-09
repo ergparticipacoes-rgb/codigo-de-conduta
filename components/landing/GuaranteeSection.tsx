@@ -23,7 +23,7 @@ export function GuaranteeSection() {
           >
             {GUARANTEE.title}
           </h2>
-          <p className="mt-4 text-base leading-[1.65] text-ink-muted sm:mt-6">
+          <p className="mt-4 max-w-xl whitespace-pre-line text-base leading-[1.7] text-ink-muted sm:mt-6">
             {GUARANTEE.body}
           </p>
         </div>

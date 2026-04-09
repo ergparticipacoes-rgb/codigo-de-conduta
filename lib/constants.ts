@@ -8,189 +8,168 @@ export const CHECKOUT_URL =
 
 /** Metadados SEO — reutilizados no layout */
 export const SITE_META = {
-  titleSuffix: "Comportamento, controle, posicionamento",
+  titleSuffix: "Controle no decisivo · acesso imediato",
   description:
-    "E-book para homem maduro: parar de repetir erro sob impulso, sustentar decisão e postura, agir com controle — método direto, sem coach.",
+    "Pare de reagir no impulso. Guia direto para decidir com clareza e sustentar postura — PDF, síntese e prompts. Tráfego pago, conversão real.",
 } as const;
 
 export const NAV = {
-  ctaLabel: "Obter o Código agora",
+  ctaLabel: "Corrigir o padrão — acesso imediato",
   ctaHref: CHECKOUT_URL,
 } as const;
 
 export const HERO = {
   headline:
-    "Você não está sem sorte. Está repetindo o mesmo erro — e isso tem correção.",
+    "Você sabe o que fazer.\nO problema é fazer certo na hora que importa.",
   subheadline:
-    "E-book para homens com consequência real: cortar o loop de impulso, sustentar decisões e postura no dia seguinte. Leitura enxuta na semana — sem guru, sem teatro.",
-  primaryCta: "Corrigir o padrão — ir ao checkout",
+    'Se a resposta for "nem sempre", o problema não é falta de informação.\nÉ falta de controle no momento decisivo.',
+  primaryCta: "Corrigir o padrão — acesso imediato",
   primaryCtaHref: CHECKOUT_URL,
-  secondaryCta: "Ver se isso é sobre mim",
+  secondaryCta: "Ver se isso é para mim",
   secondaryCtaHref: "#identificacao",
-  primaryCtaHint: "Acesso após pagamento · leitura objetiva · ferramentas na hora do aperto",
+  primaryCtaHint: "Acesso imediato · leitura prática · sem enrolação",
   support:
-    "Capítulos curtos, síntese rápida e prompts para quando a emoção apertar. Você aplica; o código sustenta o padrão.",
+    "Um guia direto para parar de reagir no impulso, decidir com clareza e sustentar sua postura — na vida real.",
   card: {
-    kicker: "Dentro do método",
+    kicker: "3 fases",
     chapters: [
       {
         n: "I",
-        title: "Onde você perde o controle (e retoma antes do erro)",
-        detail:
-          "Onde o impulso entra — e como interromper antes da consequência.",
+        title: "Leitura",
+        detail: "Cenário claro antes de mexer.",
       },
       {
         n: "II",
-        title: "O que sua conduta realmente comunica",
-        detail:
-          "Alinhar postura e ação — sem parecer uma coisa e agir como outra.",
+        title: "Controle",
+        detail: "Impulso fora do comando.",
       },
       {
         n: "III",
-        title: "Decidir, fechar e não voltar atrás",
-        detail:
-          "Decisões que não se desfazem na primeira pressão.",
+        title: "Sustentação",
+        detail: "Decisão que você mantém depois.",
       },
     ],
   },
 } as const;
 
 export const PAIN_POINTS = {
-  badge: "Onde dói de verdade",
-  title: "Se isso vira rotina, o problema não é 'detalhe' — é padrão",
-  subtitle:
-    "Não é destino nem 'gente certa'. É padrão — e só muda quando você nomeia e corta com regra.",
+  badge: "Identificação",
+  title: "Seja honesto",
+  subtitle: "",
   items: [
     {
-      title: "Você já sabe como termina — e ainda entra",
+      title: "Quantas vezes você já:",
       description:
-        "Você vê o padrão antes — e entra mesmo assim. Depois: fala dura, decisão no impulso, silêncio — e o custo.",
-    },
-    {
-      title: "O impulso decide antes de você assumir o controle",
-      description:
-        "Mensagem no calor, reação fora de hora. Quando a lucidez entra, já foi — com impacto em respeito, dinheiro ou vínculo.",
-    },
-    {
-      title: "Você fala uma coisa — e sustenta outra",
-      description:
-        "Quem está perto sente a incoerência. Confiança desgasta decisão após decisão — não quebra de uma vez.",
-    },
-    {
-      title: "Não é mais um erro isolado — é padrão instalado",
-      description:
-        "Vira histórico. Cada repetição reforça: não é falta de oportunidade — é falta de controle.",
+        "• soube o que fazer — e não fez\n• decidiu certo — e voltou atrás\n• percebeu o erro — depois que já tinha feito\n\nIsso não é azar.\n\nÉ padrão — e padrão se corrige.",
     },
   ],
 } as const;
 
 export const BREAK_BELIEF = {
-  badge: "Verdade desconfortável",
-  title: "Não é o mundo conspirando — é o script que você rodou de novo",
+  badge: "Causa",
+  title: "O problema não é saber",
   lead:
-    "Fase ruim e pessoas difíceis existem — mas não explicam o mesmo final em loop.\n\nQuando o roteiro volta, não é o cenário. É o padrão.",
+    "Você até entende o que deveria fazer.\n\nConta como você se conduz quando:\n\n• a pressão aparece\n• a emoção sobe\n• a decisão pesa",
   emphasis:
-    "O motor é outro:\n\ncomportamento sem ajuste, emoção no comando, direção fraca.\n\nSem corrigir isso, o próximo erro é sequência — não surpresa.",
-  contrast: {
-    mythLabel: "A história que alivia",
-    myth: "“Quando aparecer a oportunidade certa… a pessoa certa… o momento certo…”",
-    truthLabel: "O que muda o resultado",
-    truth:
-      "Conduta deliberada: limite claro, fala alinhada à ação — e decisão que você sustenta, sem renegociar no silêncio.",
-  },
+    "Sem controle, a decisão perde qualidade.\n\nSem critério, a consequência assume.",
 } as const;
 
 export const PRODUCT_SOLUTION = {
-  badge: "O que muda na prática",
-  title: "Depois do material, o alvo é simples: menos sabotagem, mais consistência",
-  subtitle:
-    "Critérios claros, ordem prática e verificação. Você não depende de motivação — depende do que faz, com consistência.",
-  authorityNote: "",
+  badge: "Método",
+  mechanismTitle: "Método de Conduta Masculina — 3 Fases",
+  mechanismBody:
+    "• Leitura — entender o cenário antes de agir\n• Controle — não reagir no impulso\n• Sustentação — manter a decisão depois\n\nA maioria falha aqui.\n\nQuem acerta, muda o resultado.",
+  title: "Um guia para se conduzir melhor",
+  subtitle: "O Código de Conduta Masculina foi feito para você:",
+  authorityNote:
+    "Sem teoria desnecessária.\n\nSem motivação vazia.\n\nSó aplicação.\n\nPrincípios simples. Aplicação direta. Resultado consistente.",
   benefits: [
     {
-      title: "Antes do estrago: freio visível",
-      description:
-        "Reconhece o padrão antes do prejuízo — e corta a reação que define o que você perde depois.",
+      title: "Agir com clareza",
+      description: "Menos automático, mais critério no movimento.",
     },
     {
-      title: "Postura que se sustenta",
-      description:
-        "Critérios para alinhar postura e mensagem — sem falar firme e agir fraco (ou o inverso que te expõe).",
+      title: "Decidir com firmeza",
+      description: "Fechar sem ficar renegociando com você mesmo.",
     },
     {
-      title: "Padrão identificado, narrativa encerrada",
-      description:
-        "O “foi mais uma vez” deixa de ser neblina. Você enxerga o roteiro e escolhe outro movimento — com consciência, não no impulso.",
+      title: "Se posicionar melhor",
+      description: "Falar e sustentar o que assume.",
     },
     {
-      title: "Decisão que se mantém",
-      description:
-        "Decidir sob pressão, encerrar o que precisa — e não voltar atrás na primeira instabilidade.",
+      title: "Sustentar o que escolhe",
+      description: "Manter a linha depois da decisão.",
     },
   ],
+  howItWorksTitle: "Onde isso entra na sua vida",
+  howItWorksBody:
+    "Antes de responder uma mensagem importante\nAntes de tomar uma decisão que envolve dinheiro\nAntes de reagir em uma situação emocional\nAntes de se posicionar onde não pode falhar\n\nÉ nesse momento que o padrão muda.",
+  visualizationTitle: "O que muda na prática",
+  visualizationBody:
+    "• menos erro por impulso\n• mais controle nas decisões\n• mais respeito na forma como você se posiciona\n• menos desgaste desnecessário\n\nVocê para de reagir.\n\nE passa a se conduzir.",
+  resultsTitle: "A diferença é simples",
+  resultsBody:
+    "A maioria reage.\n\nPoucos se conduzem com consciência.\n\nO que você recebe:\n\n• E-book direto (PDF)\n• Folhas de síntese\n• Checklists e prompts de decisão\n\nLeu → aplicou → ajustou.",
 } as const;
 
 export const AUDIENCE = {
-  badge: "Fit honesto",
-  title: "Para quem é — e para quem não é",
+  badge: "Fit",
+  title: "É para você se",
   forWho: {
-    title: "Faz sentido se você…",
+    title: "Faz sentido quando",
     lines: [
-      "Lida com consequência real (trabalho, vínculos, reputação) e já antecipa o desfecho.",
-      "Quer corrigir conduta — não só aliviar o fim de semana e voltar ao mesmo padrão na segunda.",
-      "Assume responsabilidade pelo comportamento e ajusta o que repete, sem terceirizar culpa.",
+      "você quer resultado na hora — não discurso depois",
+      "você cansa de repetir o mesmo padrão",
+      "você assume que conduta é treino, não sorte",
     ],
   },
   notFor: {
-    title: "Não é para você se…",
+    title: "Pula fora se",
     lines: [
-      "Quer atalho, mudança mágica ou validação para continuar igual.",
-      "Busca guru, “alfa” caricato ou performance para impressionar.",
-      "Não assume o próprio padrão — sem isso, nenhum método se sustenta.",
+      "você quer milagre sem aplicar nada.",
+      "você busca desculpa — não critério.",
     ],
   },
 } as const;
 
 export const TESTIMONIALS = {
-  title: "O que muda quando você aplica",
+  title: "Depoimentos",
   items: [
     {
       quote:
-        "Eu sabia onde errava e repetia. O material me fez travar antes da decisão, não depois.",
+        "Eu já sabia o que fazer.\nMas não fazia na hora certa.\nIsso mudou.",
       firstName: "Ricardo",
       lastName: "Almeida",
       profession: "Advogado",
     },
     {
       quote:
-        "Desconfortável — mas funciona. Passo a perceber o padrão antes de repetir.",
+        "Direto. Menos reação automática, mais controle no que faço em seguida.",
       firstName: "Fernando",
       lastName: "Moura",
       profession: "Gerente de operações",
     },
     {
-      quote:
-        "O maior ganho foi parar de voltar atrás no dia seguinte. Decidi e sustentei.",
+      quote: "Decidi e sustentei. Sem voltar atrás na primeira pressão.",
       firstName: "Paulo Henrique",
       lastName: "Lopes",
       profession: "Engenheiro civil",
     },
     {
       quote:
-        "Pensei que era relacionamento. Era comportamento — trabalho, dinheiro, postura.",
+        "Um critério só: trabalho, dinheiro, relação. Mesma postura.",
       firstName: "Marcelo",
       lastName: "Duarte",
       profession: "Empresário",
     },
     {
-      quote: "Direto ao ponto. Sem enrolação. Usei na mesma semana.",
+      quote: "Curto. Usei na mesma semana. Sem enrolação.",
       firstName: "André",
       lastName: "Cunha",
       profession: "Analista de sistemas",
     },
     {
-      quote:
-        "Não resolve sozinho — mas mostra onde você se sabota.",
+      quote: "Mostra onde você falha na conduta. O resto é aplicação.",
       firstName: "Lucas",
       lastName: "Ferreira",
       profession: "Contador",
@@ -200,34 +179,30 @@ export const TESTIMONIALS = {
 
 export const OFFER = {
   badge: "Oferta",
-  title: "O Código para ler, aplicar e sustentar — sem enrolação",
-  microLine: "Você lê uma vez. Aplica várias.",
-  description:
-    "Aplicação direta. Correção imediata.\nOnde você costuma errar — e o que fazer na hora decisiva.\nResultado vem da aplicação, não da intenção.",
+  title: "Código de Conduta Masculina",
+  microLine: "Controle · Decisão · Postura",
+  description: "Aplicação prática para decisões reais.",
   includesTitle: "O que você recebe e como usa",
   includes: [
     {
       title: "Código de Conduta Masculina (PDF)",
-      detail:
-        "Sair do automático e ajustar comportamento na prática.",
+      detail: "Direto ao ponto — para ler e aplicar.",
     },
     {
       title: "Folhas de síntese",
-      detail:
-        "Revisão em minutos antes de conversa difícil ou decisão que costuma sair errada.",
+      detail: "Revisão rápida antes do movimento.",
     },
     {
       title: "Checklists e prompts de decisão",
-      detail:
-        "No momento em que você normalmente repete o erro.",
+      detail: "No momento em que o impulso quer mandar.",
     },
     {
       title: "Acesso imediato",
-      detail: "Sem aula nem espera — no momento em que precisa decidir e sustentar.",
+      detail: "Libera após o pagamento.",
     },
   ],
   mockupEyebrow: "E-book digital",
-  mockupStrapline: "Controle · Postura · Decisão",
+  mockupStrapline: "Controle · Decisão · Postura",
   /**
    * Arte da capa no mockup: arquivo em `/public` (ex.: `/ebook-cover.jpg`) ou URL https.
    * Preferir cena low-key (decisão, tensão interna) — evitar livros, acadêmico ou estilo “coach”.
@@ -237,83 +212,61 @@ export const OFFER = {
     "https://images.unsplash.com/photo-1751150495510-5d56d31a9051?auto=format&fit=crop&w=1600&q=82",
   mockupNote:
     "Capa ilustrativa — entrega é o conteúdo e a estrutura de uso.",
-  decisionReinforcement:
-    "Não é só financeiro — é decidir fazer diferente quando mais importa.",
+  decisionReinforcement: "Decisão real. Aplicação real.",
   priceLabel: "Investimento",
   priceWas: "R$ 197",
   priceCurrent: "R$ 39",
-  priceNote: "Menos do que costuma custar repetir o mesmo erro.",
+  priceNote:
+    "Menos do que custa uma única decisão mal tomada.\nE muito menos do que continuar repetindo o mesmo padrão.",
   cta: "Quero acesso imediato",
   ctaHref: CHECKOUT_URL,
-  ctaHint: "Acesso liberado na hora · sem mensalidade · aplicação direta",
+  ctaHint: "Acesso liberado na hora · sem mensalidade",
 } as const;
 
 export const GUARANTEE = {
-  title: "Risco transparente",
+  title: "Garantia",
   body:
-    "No prazo e condições do checkout, se não trouxer diretrizes aplicáveis e clareza útil, solicite reembolso na plataforma. Processo explícito — sem letra miúda no tom.",
+    "Se não fizer sentido, você pode solicitar reembolso dentro do prazo da plataforma.\n\nSimples.",
 } as const;
 
 export const FAQ = {
-  badge: "Objeções",
+  badge: "FAQ",
 } as const;
 
 export const FAQ_ITEMS = [
   {
     q: "Isso é só sobre relacionamento?",
-    a: "Não. Relacionamento é onde aparece — o núcleo é padrão. Impacta trabalho, reputação e vínculos.",
+    a: "Não. É comportamento aplicado à vida.",
   },
   {
-    q: "É teoria ou uso no dia a dia?",
-    a: "Uso direto. Leitura e aplicação na mesma semana.",
-  },
-  {
-    q: "Funciona se eu me sinto perdido?",
-    a: "Sim. Organiza direção e reduz erro por impulso.",
+    q: "É teórico ou prático?",
+    a: "Prático.",
   },
   {
     q: "Preciso estar em crise?",
-    a: "Não. Para corrigir e evitar repetir.",
+    a: "Não. Quanto antes aplicar, melhor.",
   },
   {
-    q: "Quanto tempo leva para ler?",
-    a: "Rápido. Aplicação na hora.",
+    q: "Isso realmente funciona na prática?",
+    a: "Funciona se for aplicado. O material foi feito para uso direto em situações reais — não depende de teoria, depende de execução.",
   },
   {
-    q: "É só PDF? Funciona no celular?",
-    a: "Sim. Acesso digital, direto no celular.",
-  },
-  {
-    q: "Como é o reembolso?",
-    a: "Pela plataforma, no prazo do checkout.",
-  },
-  {
-    q: "O e-book já traz o método completo?",
-    a: "Sim. Estrutura e ferramentas estão no material — um passo só.",
-  },
-  {
-    q: "Isso substitui terapia ou tratamento médico?",
-    a: "Não. Material educacional e comportamental.",
-  },
-  {
-    q: "Isso resolve tudo sozinho?",
-    a: "Não. Resultado vem da aplicação.",
+    q: "Em quanto tempo começo a perceber resultado?",
+    a: "Desde a primeira aplicação. O ganho é imediato quando você passa a agir com mais controle e critério nas decisões.",
   },
 ] as const;
 
 export const FINAL_CTA = {
-  title:
-    "Cada temporada no mesmo padrão é juro sobre o que você já perdeu — e o próximo capítulo já está escrito.",
-  subtitle:
-    "Sem milagre — método para parar de pagar duas vezes pelo mesmo movimento: controle na ação, decisão sustentada, menos vergonha na segunda.",
-  cta: "Assumir o controle — obter o Código",
+  title: "A decisão é simples",
+  subtitle: "Continuar reagindo\n\nou\n\ncomeçar a se conduzir",
+  cta: "Começar a se conduzir melhor — acesso imediato",
   ctaHref: CHECKOUT_URL,
-  ctaHint: "Um clique · mesmo preço de referência no checkout · acesso após pagamento",
+  ctaHint: "Um clique · acesso após pagamento",
 } as const;
 
 export const FOOTER = {
   tagline:
-    "Clareza na conduta, firmeza na decisão, consistência no resultado.",
+    "Conduta com clareza.\nDecisão com critério.\nVida com direção.",
   legal:
     "© {year} Código de Conduta Masculina. Todos os direitos reservados. Conteúdo educacional.",
 } as const;

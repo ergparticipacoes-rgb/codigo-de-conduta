@@ -34,11 +34,11 @@ export function HeroSection() {
             </p>
             <h1
               id="hero-heading"
-              className="max-w-[36rem] font-display text-[1.9375rem] font-semibold leading-[1.11] tracking-[-0.035em] text-ink text-balance sm:text-[2.25rem] sm:leading-[1.09] md:max-w-[40rem] md:text-[2.75rem] md:leading-[1.07] lg:text-[3.125rem] lg:leading-[1.06] xl:text-[3.5rem] xl:leading-[1.05]"
+              className="max-w-[36rem] whitespace-pre-line font-display text-[1.9375rem] font-semibold leading-[1.11] tracking-[-0.035em] text-ink text-balance sm:text-[2.25rem] sm:leading-[1.09] md:max-w-[40rem] md:text-[2.75rem] md:leading-[1.07] lg:text-[3.125rem] lg:leading-[1.06] xl:text-[3.5rem] xl:leading-[1.05]"
             >
               {HERO.headline}
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-[1.66] text-ink-muted sm:mt-8 sm:text-lg sm:leading-[1.62]">
+            <p className="mt-6 max-w-xl whitespace-pre-line text-base leading-[1.66] text-ink-muted sm:mt-8 sm:text-lg sm:leading-[1.62]">
               {HERO.subheadline}
             </p>
             <div className="mt-7 flex max-w-xl flex-col gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">

@@ -6,14 +6,17 @@ export function FooterSimple() {
   const legal = FOOTER.legal.replace("{year}", String(year));
 
   return (
-    <footer id="rodape" className="scroll-mt-20 border-t border-white/[0.06] py-12 sm:py-14 md:py-16">
+    <footer
+      id="rodape"
+      className="scroll-mt-20 border-t border-white/[0.06] pt-12 pb-28 sm:pt-14 md:py-16"
+    >
       <Container>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
           <div className="max-w-md">
             <p className="font-display text-xl font-semibold tracking-tight text-ink text-balance sm:text-2xl">
               {PRODUCT_NAME}
             </p>
-            <p className="mt-4 text-base font-medium leading-[1.58] text-ink-muted text-balance sm:mt-5 sm:leading-[1.55]">
+            <p className="mt-4 whitespace-pre-line text-base font-medium leading-[1.58] text-ink-muted text-balance sm:mt-5 sm:leading-[1.55]">
               {FOOTER.tagline}
             </p>
           </div>
@@ -47,7 +50,7 @@ export function FooterSimple() {
             </a>
           </nav>
         </div>
-        <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-[1.62] text-ink-muted">
+        <p className="mx-auto mt-10 max-w-3xl text-center text-sm leading-relaxed text-ink-muted">
           {legal}
         </p>
       </Container>

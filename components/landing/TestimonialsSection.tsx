@@ -23,7 +23,7 @@ export function TestimonialsSection() {
             <li key={item.quote}>
               <div className="flex h-full min-h-0 flex-col rounded-2xl border border-white/[0.11] bg-white/[0.045] shadow-[0_2px_22px_-14px_rgba(0,0,0,0.48)] backdrop-blur-sm transition-[transform,box-shadow,border-color] duration-200 ease-out hover:border-white/[0.16] hover:shadow-[0_6px_28px_-14px_rgba(0,0,0,0.48)] motion-safe:hover:-translate-y-0.5 motion-reduce:hover:translate-y-0">
                 <blockquote className="m-0 flex min-h-0 flex-1 flex-col border-0 p-5 sm:p-6 md:p-6">
-                  <p className="text-[1.0625rem] leading-[1.62] text-ink text-pretty sm:text-base sm:leading-[1.65]">
+                  <p className="whitespace-pre-line text-base leading-[1.65] text-ink text-pretty sm:text-[1.0625rem] sm:leading-[1.62]">
                     {item.quote}
                   </p>
                   <footer className="mt-4 space-y-1 sm:mt-6 sm:space-y-1.5">

@@ -17,7 +17,7 @@ export function FinalCTASection() {
           >
             {FINAL_CTA.title}
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.65] text-ink-muted sm:mt-7 sm:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl whitespace-pre-line text-base leading-[1.7] text-ink-muted sm:mt-7 sm:text-lg sm:leading-[1.68]">
             {FINAL_CTA.subtitle}
           </p>
           <div className="mt-9 flex flex-col items-center sm:mt-12">
