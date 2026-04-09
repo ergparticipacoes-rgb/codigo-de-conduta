@@ -3,6 +3,12 @@
 import { CHECKOUT_URL, NAV } from "@/lib/constants";
 import { CTAButton } from "@/components/landing/CTAButton";
 
+/**
+ * Barra fixa mobile (abaixo de md).
+ * - Sem backdrop-blur no container fixo: no iOS Safari, blur + fixed costuma gerar “vão”
+ *   e artefatos quando a barra de endereço expande/recolhe (visual vs layout viewport).
+ * - Fundo opaco alinhado ao canvas; safe-area só no padding inferior (home indicator).
+ */
 export function StickyMobileCta() {
   return (
     <div
@@ -11,9 +17,10 @@ export function StickyMobileCta() {
       aria-label="Acesso ao checkout"
     >
       <div
-        className="pointer-events-auto border-t border-white/[0.08] bg-canvas/94 px-4 pt-3.5 backdrop-blur-lg backdrop-saturate-150 sm:px-5 sm:pt-4"
+        className="pointer-events-auto border-t border-white/[0.12] bg-canvas px-4 pt-3 shadow-[0_-4px_24px_-8px_rgba(0,0,0,0.45)] sm:px-5 sm:pt-3.5"
         style={{
-          paddingBottom: "max(0.875rem, env(safe-area-inset-bottom))",
+          paddingBottom:
+            "calc(0.75rem + env(safe-area-inset-bottom, 0px))",
         }}
       >
         <div className="mx-auto w-full max-w-6xl">

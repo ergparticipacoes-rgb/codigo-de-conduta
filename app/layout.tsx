@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Cormorant, Outfit } from "next/font/google";
 import { PRODUCT_NAME, SITE_META } from "@/lib/constants";
@@ -35,6 +35,13 @@ const viewContentPayload = JSON.stringify({
   content_name: PRODUCT_NAME,
   content_type: "product",
 });
+
+/** viewport-fit=cover: env(safe-area-*) confiável no iOS; ajuda fixed bottom + notch. */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -74,9 +81,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${outfit.variable} ${cormorant.variable} h-full scroll-smooth antialiased`}
+      className={`${outfit.variable} ${cormorant.variable} min-h-dvh scroll-smooth antialiased`}
     >
-      <body className="min-h-full bg-canvas font-sans text-ink">
+      <body className="min-h-dvh bg-canvas font-sans text-ink">
         {metaPixelId ? (
           <>
             <Script

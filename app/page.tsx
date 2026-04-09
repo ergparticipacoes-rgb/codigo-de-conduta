@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <NavbarSimple />
-      <main className="pb-[7.5rem] md:pb-0">
+      <main className="pb-[calc(5.25rem+env(safe-area-inset-bottom,0px))] md:pb-0">
         <HeroSection />
         <PainPointsSection />
         <BreakBeliefSection />
