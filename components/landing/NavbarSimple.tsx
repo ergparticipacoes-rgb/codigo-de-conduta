@@ -2,9 +2,13 @@ import { PRODUCT_NAME, NAV } from "@/lib/constants";
 import { Container } from "@/components/landing/Container";
 import { CTAButton } from "@/components/landing/CTAButton";
 
-export function NavbarSimple() {
+type NavbarSimpleProps = { className?: string };
+
+export function NavbarSimple({ className = "" }: NavbarSimpleProps) {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-canvas/75 backdrop-blur-xl backdrop-saturate-150">
+    <header
+      className={`sticky top-0 z-50 shrink-0 border-b border-white/[0.06] bg-canvas/75 backdrop-blur-xl backdrop-saturate-150 ${className}`}
+    >
       <Container
         as="div"
         className="flex items-center justify-center py-3.5 sm:h-[4.25rem] sm:justify-between sm:gap-4 sm:py-0"

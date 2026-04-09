@@ -8,7 +8,7 @@ export function FooterSimple() {
   return (
     <footer
       id="rodape"
-      className="scroll-mt-20 border-t border-white/[0.06] pt-12 pb-[calc(6rem+env(safe-area-inset-bottom,0px))] sm:pt-14 md:py-16"
+      className="scroll-mt-20 border-t border-white/[0.06] pt-12 pb-[calc(5.25rem+env(safe-area-inset-bottom,0px))] sm:pt-14 md:py-16"
     >
       <Container>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-8">

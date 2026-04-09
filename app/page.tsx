@@ -15,21 +15,27 @@ import { StickyMobileCta } from "@/components/landing/StickyMobileCta";
 export default function Home() {
   return (
     <>
-      <NavbarSimple />
-      <main className="pb-[calc(5.25rem+env(safe-area-inset-bottom,0px))] md:pb-0">
-        <HeroSection />
-        <PainPointsSection />
-        <BreakBeliefSection />
-        <ProductSolutionSection />
-        <AudienceSection />
-        <TestimonialsSection />
-        <OfferSection />
-        <GuaranteeSection />
-        <FAQSection />
-        <FinalCTASection />
-      </main>
-      <FooterSimple />
-      <StickyMobileCta />
+      {/*
+        Mobile: coluna com min-h-svh para altura estável com UI dinâmica do Safari;
+        CTA sticky no fim do fluxo. Desktop: md:contents “desfaz” a caixa do wrapper.
+      */}
+      <div className="flex min-h-svh flex-col md:contents">
+        <NavbarSimple />
+        <main className="w-full flex-1 pb-0">
+          <HeroSection />
+          <PainPointsSection />
+          <BreakBeliefSection />
+          <ProductSolutionSection />
+          <AudienceSection />
+          <TestimonialsSection />
+          <OfferSection />
+          <GuaranteeSection />
+          <FAQSection />
+          <FinalCTASection />
+        </main>
+        <FooterSimple />
+        <StickyMobileCta />
+      </div>
     </>
   );
 }
