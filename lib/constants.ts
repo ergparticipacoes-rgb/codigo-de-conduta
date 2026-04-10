@@ -1,10 +1,14 @@
 export const PRODUCT_NAME = "Código de Conduta Masculina";
 
+/** Checkout oficial Kiwify — todos os CTAs de conversão devem usar esta URL. */
+export const KIWIFY_CHECKOUT_URL =
+  "https://pay.kiwify.com.br/89DJAbV" as const;
+
 /**
- * URL do checkout. Preferir `NEXT_PUBLIC_CHECKOUT_URL` no deploy; o fallback evita build quebrado.
+ * URL do checkout. Opcional: `NEXT_PUBLIC_CHECKOUT_URL` no deploy; padrão é o link oficial acima.
  */
 export const CHECKOUT_URL =
-  process.env.NEXT_PUBLIC_CHECKOUT_URL?.trim() || "https://SEU-LINK-AQUI";
+  process.env.NEXT_PUBLIC_CHECKOUT_URL?.trim() || KIWIFY_CHECKOUT_URL;
 
 /** Metadados SEO — reutilizados no layout */
 export const SITE_META = {
@@ -214,7 +218,7 @@ export const OFFER = {
     "Capa ilustrativa — entrega é o conteúdo e a estrutura de uso.",
   decisionReinforcement: "Decisão real. Aplicação real.",
   priceLabel: "Investimento",
-  priceWas: "R$ 197",
+  priceWas: "R$ 97",
   priceCurrent: "R$ 39",
   priceNote:
     "Menos do que custa uma única decisão mal tomada.\nE muito menos do que continuar repetindo o mesmo padrão.",

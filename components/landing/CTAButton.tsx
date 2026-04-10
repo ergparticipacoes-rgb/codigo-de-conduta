@@ -12,9 +12,24 @@ type CTAButtonProps = {
   children: ReactNode;
   variant?: CTAButtonVariant;
   className?: string;
-  /** Links externos em nova aba (não usar no checkout principal). */
+  /** Links `http(s)`: sempre abrem em nova aba com `noopener noreferrer`. */
   external?: boolean;
 };
+
+function normalizedCheckoutOriginPath(url: string): string {
+  const trimmed = url.trim();
+  try {
+    const u = new URL(trimmed);
+    const path = u.pathname.replace(/\/+$/, "") || "";
+    return `${u.protocol}//${u.host}${path}`.toLowerCase();
+  } catch {
+    return trimmed.replace(/\/+$/, "").toLowerCase();
+  }
+}
+
+function isCheckoutDestination(href: string, checkoutUrl: string): boolean {
+  return normalizedCheckoutOriginPath(href) === normalizedCheckoutOriginPath(checkoutUrl);
+}
 
 const base =
   "inline-flex items-center justify-center gap-2 rounded-xl min-h-[48px] px-6 py-3.5 text-base tracking-normal transition-[color,background-color,border-color,box-shadow] duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
@@ -36,7 +51,7 @@ export function CTAButton({
   external = false,
 }: CTAButtonProps) {
   const classes = `${base} ${variants[variant]} ${className}`;
-  const isCheckoutLink = href === CHECKOUT_URL;
+  const isCheckoutLink = isCheckoutDestination(href, CHECKOUT_URL);
 
   if (external) {
     return (
@@ -45,6 +60,13 @@ export function CTAButton({
         className={classes}
         target="_blank"
         rel="noopener noreferrer"
+        {...(isCheckoutLink
+          ? {
+              onClick: () => {
+                trackInitiateCheckout();
+              },
+            }
+          : {})}
       >
         {children}
       </a>
@@ -64,17 +86,15 @@ export function CTAButton({
       <a
         href={href}
         className={classes}
-        onClick={
-          isCheckoutLink
-            ? (e) => {
-                e.preventDefault();
+        target="_blank"
+        rel="noopener noreferrer"
+        {...(isCheckoutLink
+          ? {
+              onClick: () => {
                 trackInitiateCheckout();
-                window.setTimeout(() => {
-                  window.location.assign(href);
-                }, 120);
-              }
-            : undefined
-        }
+              },
+            }
+          : {})}
       >
         {children}
       </a>
